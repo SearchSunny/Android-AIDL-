@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.aidlservice"
+    package="com.example.aidlclient"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="14"
-        android:targetSdkVersion="17" />
+        android:targetSdkVersion="21" />
 
     <application
         android:allowBackup="true"
@@ -22,14 +22,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--  注册服务 -->  
-        <service android:name=".MyService">
-            <intent-filter >
-                <!--  指定调用AIDL服务的ID  -->  
-                <action android:name="com.example.aidlservice.IMyService"></action>
-            </intent-filter>
-            
-        </service>
     </application>
 
 </manifest>
